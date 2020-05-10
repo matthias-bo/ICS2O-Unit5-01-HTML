@@ -11,7 +11,7 @@
     </head>
     <body>
     <h1>Matthias's random number generator</h1>
-    <p><i>Press the button to randomly generate a number from 1-6. Once you press the button, type a number into the textbox to try and guess what the random number was. <br>If you get it right, you will receive an alert saying you are correct. If you're wrong, you will get an alert saying you're incorrect.</p></i>
+    <p><i>Can you guess the number I'm thinking of? Guess a number in the textbox and see if it's correct.</p></i>
     <br>
     <p>Type your guess here</p>
     <input type="text" id="randoguess">
@@ -28,10 +28,10 @@
     typednumber = document.getElementById("randoguess").value;
 
     if (typednumber == randonumber) {
-        alert ("Correct");
+        alert ("Congratulations, you are correct!");
 }
     else {
-        alert ("Incorrect");
+        alert ("Sorry, try again");
 }
 }
     </script>
