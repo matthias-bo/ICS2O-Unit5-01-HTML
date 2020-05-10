@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Unit5-01 </title>
+    <meta charset="utf-8">
+    <meta name="description" content="random number webpage">
+    <meta name="keywords" content="random number">
+    <meta name="author" content="Matthias Bo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="random.css">
+    </head>
+    <body>
+    <h1>Matthias's random number generator</h1>
+    <p><i>Press the button to randomly generate a number from 1-6. Once you press the button, type a number into the textbox to try and guess what the random number was. <br>If you get it right, you will receive an alert saying you are correct. If you're wrong, you will get an alert saying you're incorrect.</p></i>
+    <br>
+    <p>Type your guess here</p>
+    <input type="text" id="randoguess">
+    <br>
+    <br>
+    <button id="numberguess">Submit</button>
+    <script>
+    document.getElementById("numberguess").addEventListener("click", myfunction);
+    function myfunction() {
+    let randonumber = Math.random() * 6 + 1;
+    randonumber = Math.floor(randonumber);
+
+    let typednumber;
+    typednumber = document.getElementById("randoguess").value;
+
+    if (typednumber == randonumber) {
+        alert ("Correct");
+}
+    else {
+        alert ("Incorrect");
+}
+}
+    </script>
+    </body>
+    </html>
